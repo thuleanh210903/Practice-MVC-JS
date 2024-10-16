@@ -1,0 +1,5 @@
+.eslintrc.json
+.eslintcache
+/node_modules
+/dist
+/.parcel-cache
