@@ -1,0 +1,22 @@
+@use "function" as *;
+
+//font-family
+$primary-font: Poppins;
+
+//colors
+$white-color:#ffffff ;
+$green-light: #DDFFE7;
+$green-dark: #04A033;
+$red-light: #FFD9D9;
+$red-dark: #FF1B1D;
+$red-circle: #EC2427;
+$gray: #939393;
+$black-color: #121212;
+$blue-dark: #0E1534;
+
+
+// Breakpoints
+$medium: 768px;
+$extra-lager: 1200px;
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
