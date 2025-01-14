@@ -1,0 +1,93 @@
+@use '../abstracts/' as *;
+
+.header {
+  @include flex($direction: row, $justify: space-between, $align: center);
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffffff;
+
+  &-logo {
+    img {
+      width: 150px; // Adjust based on your logo size
+    }
+  }
+
+  &-content {
+    @include flex($direction: row, $justify: space-between, $align: center);
+    flex-grow: 1;
+    max-width: 1200px;
+    margin-left: 20px;
+    gap: 20px;
+  }
+
+  &-action {
+    @include flex($direction: row, $align: center);
+    gap: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 24px;
+      max-height: 24px;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+
+  &-bag {
+    padding: 15px 16px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 16px 0px rgba(18, 18, 18, 0.04);
+  }
+
+  &-notify {
+    padding: 15px 16px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 16px 0px rgba(18, 18, 18, 0.04);
+  }
+
+  &-search {
+    @include flex($direction: row, $justify: center, $align: center);
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 28px;
+    gap: 14px;
+    border-radius: 31px;
+    box-shadow: 0px 4px 16px 0px rgba(18, 18, 18, 0.04);
+  
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    &_input {
+      flex: 1; 
+      border: none;
+      outline: none;
+      font-size: 16px;
+      color: #333;
+      background: none; 
+      &::placeholder {
+        font-size: 14px;
+        color: #939393; 
+      }
+    }
+  }
+  
+
+  &-user {
+    @include flex($direction: row, $align: center);
+    gap: 10px;
+
+    .user-name {
+      font-size: 14px;
+      color: #333333; // Dark text color
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #4caf50; // Green border for active status
+    }
+  }
+}
